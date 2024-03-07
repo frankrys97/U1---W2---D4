@@ -137,11 +137,13 @@ console.log(latestShoppingCart(shoppingCart));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-/*  let loopUntil = function (x) {
+ let loopUntil = function (x) {
   if (x >= 0 && x <= 9) {
     let i = 0;
+    let randomNumber = 0
     while (i < 3) {
-      let randomNumber = Math.floor(Math.random() * 10);
+      randomNumber = Math.floor(Math.random() * 10);
+      console.log(randomNumber);
       if (randomNumber > x) {
         i++;
       } else {
@@ -151,7 +153,7 @@ console.log(latestShoppingCart(shoppingCart));
   }
 };
 
-console.log(loopUntil(5));  */
+loopUntil(2); 
 
 
 
