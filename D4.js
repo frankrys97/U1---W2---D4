@@ -47,7 +47,7 @@ console.log(crazyDiff(21));
 */
 
 let boundary = function (n) {
-  if ((n > 20 && n <= 100) || n === 400) {
+  if (Number.isInteger(n) && ((n > 20 && n <= 100) || n === 400)) {
     return true;
   } else {
     return false;
@@ -57,6 +57,7 @@ let boundary = function (n) {
 console.log(boundary(25));
 console.log(boundary(2));
 console.log(boundary(400));
+console.log(boundary(25.5));
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
@@ -74,7 +75,7 @@ let epify = function (stringa) {
   }
 };
 
-// Lo stesso esercizio avremmo potuto anche usare il metodo: stringa.startsWith (EPICODE)
+// Lo stesso esercizio avremmo potuto anche usare il metodo: stringa.startsWith ("EPICODE")
 
 console.log(epify("non è facile"));
 console.log(epify("EPICODE è impegnativa"));
